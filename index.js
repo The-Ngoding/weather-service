@@ -74,7 +74,7 @@ app.post('/weathers',authenticateJWT, async (req, res) => {
 });
 
 // Get weather data records from today to 90 days ago
-app.get('/weathers',authenticateJWT, async (req, res) => {
+app.get('/weathers', async (req, res) => {
   try {
     const today = new Date(); // Get today's date
     const ninetyDaysAgo = addDays(today, 90); // Calculate the date 90 days ago
