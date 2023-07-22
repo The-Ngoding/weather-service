@@ -28,9 +28,6 @@ yarn-error.log*
 *.swp
 *~
 
-# Dependency lock files
-package-lock.json
-yarn.lock
 npm-shrinkwrap.json
 
 # macOS metadata
