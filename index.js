@@ -77,7 +77,7 @@ app.post('/weathers',authenticateJWT, async (req, res) => {
 app.get('/weathers', async (req, res) => {
   try {
     const today = new Date(); // Get today's date
-    const ninetyDaysAgo = addDays(today, 90); // Calculate the date 90 days ago
+    const ninetyDaysAgo = addDays(today, 98); // Calculate the date 90 days ago
 
     const weathers = await knex('weathers').where('date', '<=', ninetyDaysAgo).andWhere('date', '>=', today).select('*');
     res.json(weathers);
